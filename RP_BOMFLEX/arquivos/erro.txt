@@ -1,0 +1,15 @@
+//Arquivo contendo todos os possíveis erros do programa. Com seus Codigos dos erros e o nome do Erro.
+
+//Erros de Lógica - Começa em 0 e vai até 10.000
+
+1;Erro de Lógica do Programa
+
+//Erros de Banco de Dados - Começa em 10.001 e vai ate 20.000
+
+//Erros de validação de dados - Começa em 20.001 e vai ate 30.000
+
+//Erros de Conexão - Começa em 30.001 e vai ate 40.000
+
+//Erros Padrões 
+
+40000;Erro não encontrado

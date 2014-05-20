@@ -1,5 +1,6 @@
 package br.com.bomflex.testes;
 
+import br.com.bomflex.controller.erro.StringErros;
 import br.com.bomflex.controller.validacao.Validacao;
 
 public class Teste {
@@ -12,7 +13,8 @@ public class Teste {
 		System.out.println("TELEFONE - "+ valida.validaTelefone("071", "33019000"));
 		System.out.println("NOME - "+ valida.validaNome("Mailton", 3, 20));
 		System.out.println("CPF - "+ valida.validaCPF("03511971500"));
-
+		StringErros teste = new StringErros();
+		teste.exibeErroTela("400");
 	}
 
 }
