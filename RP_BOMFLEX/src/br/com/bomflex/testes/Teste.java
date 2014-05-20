@@ -14,7 +14,7 @@ public class Teste {
 		System.out.println("NOME - "+ valida.validaNome("Mailton", 3, 20));
 		System.out.println("CPF - "+ valida.validaCPF("03511971500"));
 		StringErros teste = new StringErros();
-		teste.exibeErroTela("400");
+		teste.exibeErroTela("120");
 	}
 
 }
