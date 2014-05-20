@@ -1,0 +1,191 @@
+/**
+ * 
+ */
+package br.com.bomflex.model.objetos;
+
+/**
+ * @author Mailton Araújo - Analista de Sistemas
+ * Telefone - 71 - 3301-9000
+ * E-mail - mailton@sonomag.com.br
+ * 		    pcmotion@gmail.com
+ */
+public class Produto {
+	//Chave identificadora do idProduto
+	private int idProduto;
+	//Chave identificadora do Id Usuario que Cadastrou o Produto
+	private int idUsuario;
+	//Chave identificadora do Id do Fabricante
+	private int idFabricante;
+	//Chave identificadora do id da Situacao do Produto
+	private int idSituacaoProduto;
+	//Chave do id Grupo Produto
+	private int idGrupoProduto;
+	//Chave do id Tipo de Produto
+	private int idTipoProduto;
+	//Nome do Produto
+	private String nomeProduto;
+	//Quantidade Minima do Produto
+	private float qtdMinima;
+	//Data de Cadastro do Produto
+	private String dataCadastro;
+	//Preço de Compra do Produto
+	private float preçoCompra;
+	//Preço de Venda do Produto
+	private float preçoVenda;
+	
+	/**
+	 * Método para retorno do campo idProduto
+	 * @return Retorna um objeto do tipo int
+	 */
+	public int getIdProduto() {
+		return idProduto;
+	}
+	/**
+	 * Método de escrita do campo idProduto
+	 * @param Requer um parametro do tipo int
+	 */
+	public void setIdProduto(int idProduto) {
+		this.idProduto = idProduto;
+	}
+	/**
+	 * Método para retorno do campo idUsuario
+	 * @return Retorna um objeto do tipo int
+	 */
+	public int getIdUsuario() {
+		return idUsuario;
+	}
+	/**
+	 * Método de escrita do campo idUsuario
+	 * @param Requer um parametro do tipo int
+	 */
+	public void setIdUsuario(int idUsuario) {
+		this.idUsuario = idUsuario;
+	}
+	/**
+	 * Método para retorno do campo idFabricante
+	 * @return Retorna um objeto do tipo int
+	 */
+	public int getIdFabricante() {
+		return idFabricante;
+	}
+	/**
+	 * Método de escrita do campo idFabricante
+	 * @param Requer um parametro do tipo int
+	 */
+	public void setIdFabricante(int idFabricante) {
+		this.idFabricante = idFabricante;
+	}
+	/**
+	 * Método para retorno do campo idSituacaoProduto
+	 * @return Retorna um objeto do tipo int
+	 */
+	public int getIdSituacaoProduto() {
+		return idSituacaoProduto;
+	}
+	/**
+	 * Método de escrita do campo idSituacaoProduto
+	 * @param Requer um parametro do tipo int
+	 */
+	public void setIdSituacaoProduto(int idSituacaoProduto) {
+		this.idSituacaoProduto = idSituacaoProduto;
+	}
+	/**
+	 * Método para retorno do campo idGrupoProduto
+	 * @return Retorna um objeto do tipo int
+	 */
+	public int getIdGrupoProduto() {
+		return idGrupoProduto;
+	}
+	/**
+	 * Método de escrita do campo idGrupoProduto
+	 * @param Requer um parametro do tipo int
+	 */
+	public void setIdGrupoProduto(int idGrupoProduto) {
+		this.idGrupoProduto = idGrupoProduto;
+	}
+	/**
+	 * Método para retorno do campo idTipoProduto
+	 * @return Retorna um objeto do tipo int
+	 */
+	public int getIdTipoProduto() {
+		return idTipoProduto;
+	}
+	/**
+	 * Método de escrita do campo idTipoProduto
+	 * @param Requer um parametro do tipo int
+	 */
+	public void setIdTipoProduto(int idTipoProduto) {
+		this.idTipoProduto = idTipoProduto;
+	}
+	/**
+	 * Método para retorno do campo nomeProduto
+	 * @return Retorna um objeto do tipo String
+	 */
+	public String getNomeProduto() {
+		return nomeProduto;
+	}
+	/**
+	 * Método de escrita do campo nomeProduto
+	 * @param Requer um parametro do tipo String
+	 */
+	public void setNomeProduto(String nomeProduto) {
+		this.nomeProduto = nomeProduto;
+	}
+	/**
+	 * Método para retorno do campo qtdMinima
+	 * @return Retorna um objeto do tipo float
+	 */
+	public float getQtdMinima() {
+		return qtdMinima;
+	}
+	/**
+	 * Método de escrita do campo qtdMinima
+	 * @param Requer um parametro do tipo float
+	 */
+	public void setQtdMinima(float qtdMinima) {
+		this.qtdMinima = qtdMinima;
+	}
+	/**
+	 * Método para retorno do campo dataCadastro
+	 * @return Retorna um objeto do tipo String
+	 */
+	public String getDataCadastro() {
+		return dataCadastro;
+	}
+	/**
+	 * Método de escrita do campo dataCadastro
+	 * @param Requer um parametro do tipo String
+	 */
+	public void setDataCadastro(String dataCadastro) {
+		this.dataCadastro = dataCadastro;
+	}
+	/**
+	 * Método para retorno do campo preçoCompra
+	 * @return Retorna um objeto do tipo float
+	 */
+	public float getPreçoCompra() {
+		return preçoCompra;
+	}
+	/**
+	 * Método de escrita do campo preçoCompra
+	 * @param Requer um parametro do tipo float
+	 */
+	public void setPreçoCompra(float preçoCompra) {
+		this.preçoCompra = preçoCompra;
+	}
+	/**
+	 * Método para retorno do campo preçoVenda
+	 * @return Retorna um objeto do tipo float
+	 */
+	public float getPreçoVenda() {
+		return preçoVenda;
+	}
+	/**
+	 * Método de escrita do campo preçoVenda
+	 * @param Requer um parametro do tipo float
+	 */
+	public void setPreçoVenda(float preçoVenda) {
+		this.preçoVenda = preçoVenda;
+	}
+	
+}
