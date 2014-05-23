@@ -14,6 +14,8 @@ import java.util.HashMap;
 
 import javax.swing.JOptionPane;
 
+import br.com.bomflex.model.objetos.Erros;
+
 /**
  * @author Mailton Araújo - Analista de Sistemas
  * Telefone - 71 - 3301-9000
@@ -74,21 +76,27 @@ public class StringErros {
 		}
 	}
 
-	public void exibeErroTela(String key){
+	public void exibeErroTela(Erros novo){
 	
-		JOptionPane.showMessageDialog(null, "Código do Erro: "+ key + "\nDescrição do Erro: " + getErros(key), "Erro " + key, 2);
+		JOptionPane.showMessageDialog(null, "Código do Erro: "+ novo.getCodErro() + "\nDescrição do Erro: " + novo.getNomeErro(), "Erro " + novo.getCodErro(), 2);
 	}
 	
 	/**
 	 * Método para retorno de uma String contendo o Erro
 	 * @return Retorna um objeto do tipo String
 	 */
-	public String getErros(String key) {
+	public Erros getErros(String key) {
 		if(erros.containsKey(key)){//Verifica no HashMap se o Erro esta cadastrado.
-			return erros.get(key).toString();
+			Erros novo = new Erros();
+			novo.setCodErro(key);
+			novo.setNomeErro(erros.get(key));
+			return novo;
 		}else{
-			//Caso não encontre nenhum Erro com este codigo exiba o erro de código não encontrado.
-			return erros.get("40000").toString();
+			//Caso não encontre nenhum Erro com este codigo exiba o codigo de erro não encontrado.
+			Erros novo = new Erros();
+			novo.setCodErro("40000");
+			novo.setNomeErro(erros.get("40000"));
+			return novo;
 		}
 	}
 
