@@ -15,8 +15,6 @@ public class Teste {
 		System.out.println("CPF - "+ valida.validaCPF("03511971500"));
 		StringErros teste = new StringErros();
 		teste.exibeErroTela(teste.getErros("2"));
-
-
 	}
 
 }
