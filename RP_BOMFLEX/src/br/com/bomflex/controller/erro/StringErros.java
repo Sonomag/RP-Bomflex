@@ -14,7 +14,7 @@ import java.util.HashMap;
 
 import javax.swing.JOptionPane;
 
-import br.com.bomflex.model.objetos.Erros;
+import br.com.bomflex.model.Erros;
 
 /**
  * @author Mailton Araújo - Analista de Sistemas

@@ -1,7 +1,7 @@
 /**
  * 
  */
-package br.com.bomflex.model.objetos;
+package br.com.bomflex.model;
 
 /**
  * @author Mailton Araújo - Analista de Sistemas
