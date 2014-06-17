@@ -31,11 +31,10 @@ public class PessoaJuridica {
 	 * @param nomeFantasia Requer um paramentro do tipo String
 	 * @param cnpj Requer um parametro do tipo String
 	 */
-	public PessoaJuridica(int idPessoaJuridica, int idPessoa, String razaoSocial, String nomeFantasia, String cnpj) {
+	public PessoaJuridica(int idPessoaJuridica, int idPessoa, String razaoSocial, String cnpj) {
 		setCnpj(cnpj);
 		setIdPessoa(idPessoa);
 		setIdPessoaJuridica(idPessoaJuridica);
-		setNomeFantasia(nomeFantasia);
 		setRazaoSocial(razaoSocial);
 	}
 	
@@ -92,7 +91,7 @@ public class PessoaJuridica {
 	 * Método de escrita do campo nomeFantasia
 	 * @param Requer um parametro do tipo String
 	 */
-	private void setNomeFantasia(String nomeFantasia) {
+	public void setNomeFantasia(String nomeFantasia) {
 		this.nomeFantasia = nomeFantasia;
 	}
 	/**

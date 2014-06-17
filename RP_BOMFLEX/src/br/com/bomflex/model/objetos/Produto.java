@@ -34,6 +34,30 @@ public class Produto {
 	private float preçoVenda;
 	
 	/**
+	 * Construtor da Classe Produto.java 
+	 * @param idProduto
+	 * @param idUsuario
+	 * @param idFabricante
+	 * @param idSituacaoProduto
+	 * @param idGrupoProduto
+	 * @param idTipoProduto
+	 * @param nomeProduto
+	 * @param dataCadastro
+	 */
+	public Produto(int idProduto, int idUsuario, int idFabricante,
+			int idSituacaoProduto, int idGrupoProduto, int idTipoProduto,
+			String nomeProduto, String dataCadastro) {
+		super();
+		this.idProduto = idProduto;
+		this.idUsuario = idUsuario;
+		this.idFabricante = idFabricante;
+		this.idSituacaoProduto = idSituacaoProduto;
+		this.idGrupoProduto = idGrupoProduto;
+		this.idTipoProduto = idTipoProduto;
+		this.nomeProduto = nomeProduto;
+		this.dataCadastro = dataCadastro;
+	}
+	/**
 	 * Método para retorno do campo idProduto
 	 * @return Retorna um objeto do tipo int
 	 */

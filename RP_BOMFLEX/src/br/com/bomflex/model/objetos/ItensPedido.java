@@ -25,22 +25,12 @@ public class ItensPedido {
 	 * Construtor da Classe ItensPedido.java 
 	 * @param idPedido Requer um paramentro do tipo INTEIRO
 	 * @param idProduto Requer um paramentro do tipo INTEIRO
-	 * @param idTipoDesconto Requer um paramentro do tipo INTEIRO
 	 * @param quantidade Requer um paramentro do tipo FLOAT
-	 * @param valorUnitario Requer um paramentro do tipo FLOAT
-	 * @param desconto Requer um paramentro do tipo FLOAT
-	 * @param valorTotal Requer um paramentro do tipo FLOAT
 	 */
-	public ItensPedido(int idPedido, int idProduto, int idTipoDesconto,
-			float quantidade, float valorUnitario, float desconto,
-			float valorTotal) {
-		setDesconto(desconto);
+	public ItensPedido(int idPedido, int idProduto, float quantidade) {
 		setIdPedido(idPedido);
 		setIdProduto(idProduto);
-		setIdTipoDesconto(idTipoDesconto);
 		setQuantidade(quantidade);
-		setValorTotal(valorTotal);
-		setValorUnitario(valorUnitario);
 	}
 	/**
 	 * Método para retorno do campo idPedido
@@ -53,7 +43,7 @@ public class ItensPedido {
 	 * Método de escrita do campo idPedido
 	 * @param Requer um parametro do tipo int
 	 */
-	private void setIdPedido(int idPedido) {
+	public void setIdPedido(int idPedido) {
 		this.idPedido = idPedido;
 	}
 	/**
@@ -67,7 +57,7 @@ public class ItensPedido {
 	 * Método de escrita do campo idProduto
 	 * @param Requer um parametro do tipo int
 	 */
-	private void setIdProduto(int idProduto) {
+	public void setIdProduto(int idProduto) {
 		this.idProduto = idProduto;
 	}
 	/**
@@ -81,7 +71,7 @@ public class ItensPedido {
 	 * Método de escrita do campo idTipoDesconto
 	 * @param Requer um parametro do tipo int
 	 */
-	private void setIdTipoDesconto(int idTipoDesconto) {
+	public void setIdTipoDesconto(int idTipoDesconto) {
 		this.idTipoDesconto = idTipoDesconto;
 	}
 	/**
@@ -95,7 +85,7 @@ public class ItensPedido {
 	 * Método de escrita do campo quantidade
 	 * @param Requer um parametro do tipo float
 	 */
-	private void setQuantidade(float quantidade) {
+	public void setQuantidade(float quantidade) {
 		this.quantidade = quantidade;
 	}
 	/**
@@ -109,7 +99,7 @@ public class ItensPedido {
 	 * Método de escrita do campo valorUnitario
 	 * @param Requer um parametro do tipo float
 	 */
-	private void setValorUnitario(float valorUnitario) {
+	public void setValorUnitario(float valorUnitario) {
 		this.valorUnitario = valorUnitario;
 	}
 	/**
@@ -123,7 +113,7 @@ public class ItensPedido {
 	 * Método de escrita do campo desconto
 	 * @param Requer um parametro do tipo float
 	 */
-	private void setDesconto(float desconto) {
+	public void setDesconto(float desconto) {
 		this.desconto = desconto;
 	}
 	/**
@@ -137,8 +127,7 @@ public class ItensPedido {
 	 * Método de escrita do campo valorTotal
 	 * @param Requer um parametro do tipo float
 	 */
-	private void setValorTotal(float valorTotal) {
+	public void setValorTotal(float valorTotal) {
 		this.valorTotal = valorTotal;
-	}
-	
+	}	
 }
