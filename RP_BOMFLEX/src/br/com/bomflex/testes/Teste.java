@@ -29,7 +29,7 @@ public class Teste extends Thread{
 	public static void main(String[] args) {
 		
 		new Teste(1000,"Teste 1",System.currentTimeMillis()).start();
-//		new Teste(2000,"Teste 2",System.currentTimeMillis()).start();
+		new Teste(2000,"Teste 2",System.currentTimeMillis()).start();
 //		new Teste(3000,"Teste 3",System.currentTimeMillis()).start();
 //		new Teste(4000,"Teste 4",System.currentTimeMillis()).start();
 		
