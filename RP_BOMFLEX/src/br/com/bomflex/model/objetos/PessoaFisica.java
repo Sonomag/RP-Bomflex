@@ -18,21 +18,27 @@ public class PessoaFisica {
 	private String nome;
 	//Sobrenome
 	private String sobrenome;
+	//Apelido
+	private String apelido;
 	//CPF
 	private String cpf;
 	//RG
 	private String rg;
-	
+		
 	/**
 	 * Construtor da Classe PessoaFisica.java 
 	 * @param idPessoaFisica
 	 * @param idPessoa
 	 * @param nome
+	 * @param cpf
 	 */
-	public PessoaFisica(int idPessoaFisica, int idPessoa, String nome) {
-		setIdPessoa(idPessoa);
-		setIdPessoa(idPessoa);
-		setNome(nome);
+	public PessoaFisica(int idPessoaFisica, int idPessoa, String nome,
+			String cpf) {
+		super();
+		this.idPessoaFisica = idPessoaFisica;
+		this.idPessoa = idPessoa;
+		this.nome = nome;
+		this.cpf = cpf;
 	}
 	/**
 	 * Método para retorno do campo idPessoaFisica
@@ -89,6 +95,20 @@ public class PessoaFisica {
 	 */
 	public void setSobrenome(String sobrenome) {
 		this.sobrenome = sobrenome;
+	}
+	/**
+	 * Método para retorno do campo apelido
+	 * @return Retorna um objeto do tipo String
+	 */
+	public String getApelido() {
+		return apelido;
+	}
+	/**
+	 * Método de escrita do campo apelido
+	 * @param Requer um parametro do tipo String
+	 */
+	public void setApelido(String apelido) {
+		this.apelido = apelido;
 	}
 	/**
 	 * Método para retorno do campo cpf

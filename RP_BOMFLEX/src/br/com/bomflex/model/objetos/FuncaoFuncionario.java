@@ -17,15 +17,21 @@ public class FuncaoFuncionario {
 	private int idFuncao;
 	//Nome da Funcao
 	private String nome;
+	//Salário Base
+	private float salarioBase;
+	
 	
 	/**
 	 * Construtor da Classe FuncaoFuncionario.java 
-	 * @param idFuncao Requer um parametro do tipo INTEIRO
-	 * @param nome Requer um parametro do tipo String
+	 * @param idFuncao
+	 * @param nome
+	 * @param salarioBase
 	 */
-	public FuncaoFuncionario(int idFuncao, String nome) {
-		setIdFuncao(idFuncao);
-		setNome(nome);
+	public FuncaoFuncionario(int idFuncao, String nome, float salarioBase) {
+		super();
+		this.idFuncao = idFuncao;
+		this.nome = nome;
+		this.salarioBase = salarioBase;
 	}
 	/**
 	 * Método para retorno do campo idFuncao
@@ -38,7 +44,7 @@ public class FuncaoFuncionario {
 	 * Método de escrita do campo idFuncao
 	 * @param Requer um parametro do tipo int
 	 */
-	private void setIdFuncao(int idFuncao) {
+	public void setIdFuncao(int idFuncao) {
 		this.idFuncao = idFuncao;
 	}
 	/**
@@ -52,10 +58,22 @@ public class FuncaoFuncionario {
 	 * Método de escrita do campo nome
 	 * @param Requer um parametro do tipo String
 	 */
-	private void setNome(String nome) {
+	public void setNome(String nome) {
 		this.nome = nome;
 	}
-
-	
+	/**
+	 * Método para retorno do campo salarioBase
+	 * @return Retorna um objeto do tipo float
+	 */
+	public float getSalarioBase() {
+		return salarioBase;
+	}
+	/**
+	 * Método de escrita do campo salarioBase
+	 * @param Requer um parametro do tipo float
+	 */
+	public void setSalarioBase(float salarioBase) {
+		this.salarioBase = salarioBase;
+	}
 	
 }

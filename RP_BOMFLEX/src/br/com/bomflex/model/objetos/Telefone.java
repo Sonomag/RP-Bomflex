@@ -20,8 +20,6 @@ public class Telefone {
 	private String telefone;
 	//Contato
 	private String contato;
-	//Observações
-	private String observações;
 	
 	/**
 	 * Construtor da Classe Telefone.java 
@@ -107,20 +105,5 @@ public class Telefone {
 	public void setContato(String contato) {
 		this.contato = contato;
 	}
-	/**
-	 * Método para retorno do campo observações
-	 * @return Retorna um objeto do tipo String
-	 */
-	public String getObservações() {
-		return observações;
-	}
-	/**
-	 * Método de escrita do campo observações
-	 * @param Requer um parametro do tipo String
-	 */
-	public void setObservações(String observações) {
-		this.observações = observações;
-	}
-	
 	
 }

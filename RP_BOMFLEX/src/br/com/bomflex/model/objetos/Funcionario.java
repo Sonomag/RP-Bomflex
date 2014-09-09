@@ -16,6 +16,22 @@ public class Funcionario {
 	private int idPessoaFisica;
 	//Chave identificadora da idFuncao
 	private int idFuncao;
+	//Bonificações
+	private float bonificacoes;
+	/**
+	 * Método para retorno do campo bonificacoes
+	 * @return Retorna um objeto do tipo float
+	 */
+	public float getBonificacoes() {
+		return bonificacoes;
+	}
+	/**
+	 * Método de escrita do campo bonificacoes
+	 * @param Requer um parametro do tipo float
+	 */
+	public void setBonificacoes(float bonificacoes) {
+		this.bonificacoes = bonificacoes;
+	}
 	/**
 	 * Construtor da Classe Funcionario.java 
 	 * @param idFuncionario
