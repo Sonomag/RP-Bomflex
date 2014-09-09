@@ -9,6 +9,9 @@ public class Permissoes {
 	private int idPermissoes;
 	//Nome da Permissão
 	private String nome;
+	//Descrição Detalhada da Permissão. Exemplo: "Este campo de cadastro de Clientes Executa cadastro de clientes
+	//Pessoa Física, Jurídica, etc.
+	private String descricao;
 	/***
 	 * Construtor da Classe onde é obrigado a ser informado o idPermissão e o Nome da permissão
 	 * @param idPermissoes Id da Permissão
@@ -47,5 +50,19 @@ public class Permissoes {
 	 */
 	private void setNome(String nome) {
 		this.nome = nome;
+	}
+	/**
+	 * Método para retorno do campo descricao
+	 * @return Retorna um objeto do tipo String
+	 */
+	public String getDescricao() {
+		return descricao;
+	}
+	/**
+	 * Método de escrita do campo descricao
+	 * @param Requer um parametro do tipo String
+	 */
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
 	}
 }
