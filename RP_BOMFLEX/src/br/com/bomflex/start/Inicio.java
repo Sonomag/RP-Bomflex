@@ -5,6 +5,7 @@ package br.com.bomflex.start;
 
 import br.com.bomflex.controller.erro.StringErros;
 import br.com.bomflex.controller.validacao.Validacao;
+import br.com.bomflex.view.utilitario.telas.ProducaoDoDia;
 
 /**
  * @author Mailton Araújo - Analista de Sistemas
@@ -25,6 +26,7 @@ public class Inicio {
 		StringErros teste = new StringErros();
 		teste.exibeErroTela(teste.getErros("2")); 
 
+//		new ProducaoDoDia();
 	}
 
 }
