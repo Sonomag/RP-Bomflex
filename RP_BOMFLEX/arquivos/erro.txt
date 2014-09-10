@@ -10,6 +10,8 @@
 
 //Erros de Conexão - Começa em 30.001 e vai ate 40.000
 
+30001;Erro no DRIVER do Banco de Dados.
+
 //Erros Padrões 
 
 40000;Erro não encontrado
