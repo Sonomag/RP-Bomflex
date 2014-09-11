@@ -27,29 +27,22 @@ public class ConexaoLocal {
 	private static final String PASSWORD = "vk32lcvop123";//Senha do Usuário do Banco de Dados
 	private static final String STR_CONEXAO = "jdbc:postgresql://" + IP_LOCAL + ":8751/" + DATABASE ;//Uma String de Conexï¿½es Local
 	
-	//String dos Erros do Sistema
-	private static StringErros teste = new StringErros();
 	
 	/***
 	 * Método para retorno do Ponteiro de Conexao com o Banco de Dados
 	 * @return Retorna um objeto do tipo Connection
 	 */
-	public static Connection getConection() {
+	public static Connection getConection(StringErros erros) {
 		Connection con = null;
 		try{
 			Class.forName(STR_DRIVER);
 			con = DriverManager.getConnection(STR_CONEXAO,USER,PASSWORD);
 			return con; 
 		}catch(ClassNotFoundException e){
-			teste.exibeErroTela(teste.getErros("30001")); 
+			erros.exibeErroTela(erros.getErros("30001")); 
 		} catch (SQLException e) {
-			
-			teste.exibeErroTela(teste.getErros("30001"));
+			erros.exibeErroTela(erros.getErros("30002"));
 		}
-		
-		
 		return null;
-		
 	}
-	
 }

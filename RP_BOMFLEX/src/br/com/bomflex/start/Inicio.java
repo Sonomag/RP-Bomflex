@@ -3,6 +3,8 @@
  */
 package br.com.bomflex.start;
 
+import javax.swing.JOptionPane;
+import br.com.bomflex.controller.erro.StringErros;
 import br.com.bomflex.view.utilitario.telas.ProducaoDoDia;
 
 /**
@@ -23,7 +25,16 @@ public class Inicio {
 //		System.out.println("CPF - "+ valida.validaCPF("03511971500"));
 //		StringErros teste = new StringErros();
 //		teste.exibeErroTela(teste.getErros("2")); 
-
-		new ProducaoDoDia();
+		
+		//String dos Erros do Sistema
+		StringErros erros = new StringErros();
+		//Enviar o objeto dos erros do Sistema.
+		//Caso não consiga exiba o erro e não abra o programa
+		if(erros.tamanhoErros()>0){
+			new ProducaoDoDia(erros);
+		}else{
+			JOptionPane.showMessageDialog(null, "Código do Erro: "+ "40000" + "\nDescrição do Erro: " + "Não foi carregado a biblioteca de erros. Impossível abrir o programa.","Erro: Faltam Bibliotecas.", 2);
+		}
+		
 	}
 }

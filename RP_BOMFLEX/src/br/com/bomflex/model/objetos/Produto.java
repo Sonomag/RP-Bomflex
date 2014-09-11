@@ -12,6 +12,8 @@ package br.com.bomflex.model.objetos;
 public class Produto {
 	//Chave identificadora do idProduto
 	private int idProduto;
+	//Chave identificadora da Unidade de Medida do Produto
+	private int idUnidadeMedida;
 	//Chave identificadora do Id Usuario que Cadastrou o Produto
 	private int idUsuario;
 	//Chave identificadora do Id do Fabricante
@@ -36,6 +38,7 @@ public class Produto {
 	/**
 	 * Construtor da Classe Produto.java 
 	 * @param idProduto
+	 * @param idUnidadeMedida
 	 * @param idUsuario
 	 * @param idFabricante
 	 * @param idSituacaoProduto
@@ -44,7 +47,7 @@ public class Produto {
 	 * @param nomeProduto
 	 * @param dataCadastro
 	 */
-	public Produto(int idProduto, int idUsuario, int idFabricante,
+	public Produto(int idProduto,int idUnidadeMedida,int idUsuario, int idFabricante,
 			int idSituacaoProduto, int idGrupoProduto, int idTipoProduto,
 			String nomeProduto, String dataCadastro) {
 		super();
@@ -70,6 +73,20 @@ public class Produto {
 	 */
 	public void setIdProduto(int idProduto) {
 		this.idProduto = idProduto;
+	}
+	/**
+	 * Método para retorno do campo idUnidadeMedida
+	 * @return Retorna um objeto do tipo int
+	 */
+	public int getIdUnidadeMedida() {
+		return idUnidadeMedida;
+	}
+	/**
+	 * Método de escrita do campo idUnidadeMedida
+	 * @param Requer um parametro do tipo int
+	 */
+	public void setIdUnidadeMedida(int idUnidadeMedida) {
+		this.idUnidadeMedida = idUnidadeMedida;
 	}
 	/**
 	 * Método para retorno do campo idUsuario

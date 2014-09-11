@@ -3,8 +3,6 @@
  */
 package br.com.bomflex.model;
 
-import java.util.ArrayList;
-
 /**
  * @author Mailton Araújo - Analista de Sistemas
  * Telefone - 71 - 3301-9000
@@ -14,35 +12,35 @@ import java.util.ArrayList;
  */
 public class ObjetoRetorno {
 	//String para exibir uma mensagem de erro seguindo um arquivo XML com os Erros.
-	private String erro;
+	private Erros erro;
 	//Retorno do Objeto.
-	private ArrayList<Object> objeto;
+	private Object objeto;
 	/**
 	 * Método para retorno do campo erro
 	 * @return Retorna um objeto do tipo String
 	 */
-	public String getErro() {
+	public Erros getErro() {
 		return erro;
 	}
 	/**
 	 * Método de escrita do campo erro
 	 * @param Requer um parametro do tipo String
 	 */
-	public void setErro(String erro) {
+	public void setErro(Erros erro) {
 		this.erro = erro;
 	}
 	/**
 	 * Método para retorno do campo objeto
 	 * @return Retorna um objeto do tipo ArrayList<Object>
 	 */
-	public ArrayList<Object> getObjeto() {
+	public Object getObjeto() {
 		return objeto;
 	}
 	/**
 	 * Método de escrita do campo objeto
 	 * @param Requer um parametro do tipo ArrayList<Object>
 	 */
-	public void setObjeto(ArrayList<Object> objeto) {
+	public void setObjeto(Object objeto) {
 		this.objeto = objeto;
 	}
 }

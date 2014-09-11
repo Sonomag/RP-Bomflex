@@ -10,7 +10,12 @@
 
 //Erros de Conexão - Começa em 30.001 e vai ate 40.000
 
-30001;Erro no DRIVER do Banco de Dados.
+30001;Erro no DRIVER do banco de dados.
+30002;Não foi possível efetuar a conexão com o banco de dados.
+30003;Erro na Busca dos Dados.
+30004;Impossível fechar a Conexão com o Banco de Dados.
+30005;Banco de Dados em Branco. Não existe resultados para serem exibidos.
+
 
 //Erros Padrões 
 
