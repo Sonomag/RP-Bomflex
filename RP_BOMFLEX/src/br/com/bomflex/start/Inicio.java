@@ -27,7 +27,6 @@ public class Inicio {
 //		System.out.println("CPF - "+ valida.validaCPF("03511971500"));
 //		StringErros teste = new StringErros();
 //		teste.exibeErroTela(teste.getErros("2")); 
-		
 		//String dos Erros do Sistema
 		StringErros erros = new StringErros();
 		//Enviar o objeto dos erros do Sistema.
