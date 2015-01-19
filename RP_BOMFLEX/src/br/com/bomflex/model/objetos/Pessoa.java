@@ -4,7 +4,7 @@
 package br.com.bomflex.model.objetos;
 
 /**
- * @author Mailton Araújo - Analista de Sistemas
+ * @author Mailton Araï¿½jo - Analista de Sistemas
  * Telefone - 71 - 3301-9000
  * E-mail - mailton@sonomag.com.br
  * 		    pcmotion@gmail.com
@@ -12,78 +12,75 @@ package br.com.bomflex.model.objetos;
 public class Pessoa {
 	//ID Pessoa
 	private int idPessoa;
-	//ID Endereço
-	private int idEndereço;
+	//ID Endereï¿½o
+	private int idEndereco;
 	//ID TipoPessoa
 	private int idTipoPessoa;
-	//Este ID serve para identifica-lo se for pessoa física qual o seu ID,
+	//Este ID serve para identifica-lo se for pessoa fï¿½sica qual o seu ID,
 	//e se for juridica tambem.
 	private int id;
 	
 	/**
 	 * Construtor da Classe Pessoa.java 
 	 * @param idPessoa
-	 * @param idEndereço
+	 * @param idEndereï¿½o
 	 * @param idTipoPessoa
 	 * @param id
 	 */
-	public Pessoa(int idPessoa, int idEndereço, int idTipoPessoa, int id) {
-		setId(id);
+	public Pessoa(int idPessoa) {
 		setIdPessoa(idPessoa);
-		setIdEndereço(idEndereço);
-		setIdTipoPessoa(idTipoPessoa);
 	}
 	/**
-	 * Método para retorno do campo idPessoa
+	 * Mï¿½todo para retorno do campo idPessoa
 	 * @return Retorna um objeto do tipo int
 	 */
 	public int getIdPessoa() {
 		return idPessoa;
 	}
 	/**
-	 * Método de escrita do campo idPessoa
+	 * Mï¿½todo de escrita do campo idPessoa
 	 * @param Requer um parametro do tipo int
 	 */
 	public void setIdPessoa(int idPessoa) {
 		this.idPessoa = idPessoa;
 	}
 	/**
-	 * Método para retorno do campo idEndereço
+	 * Mï¿½todo para retorno do campo idEndereï¿½o
 	 * @return Retorna um objeto do tipo int
 	 */
-	public int getIdEndereço() {
-		return idEndereço;
+	public int getIdEndereco() {
+		return idEndereco;
 	}
 	/**
-	 * Método de escrita do campo idEndereço
+	 * Mï¿½todo de escrita do campo idEndereï¿½o
 	 * @param Requer um parametro do tipo int
 	 */
-	public void setIdEndereço(int idEndereço) {
-		this.idEndereço = idEndereço;
+	public void setIdEndereco(int idEndereco) {
+		this.idEndereco = idEndereco;
 	}
 	/**
-	 * Método para retorno do campo idTipoPessoa
+	 * Mï¿½todo para retorno do campo idTipoPessoa
 	 * @return Retorna um objeto do tipo int
 	 */
 	public int getIdTipoPessoa() {
 		return idTipoPessoa;
 	}
 	/**
-	 * Método de escrita do campo idTipoPessoa
+	 * Mï¿½todo de escrita do campo idTipoPessoa
 	 * @param Requer um parametro do tipo int
 	 */
 	public void setIdTipoPessoa(int idTipoPessoa) {
 		this.idTipoPessoa = idTipoPessoa;
 	}
 	/**
-	 * Método para retorno do campo id
+	 * Mï¿½todo para retorno do campo id
 	 * @return Retorna um objeto do tipo int
 	 */
 	public int getId() {
 		return id;
 	}
 	/**
-	 * Método de escrita do campo id
+	 * Mï¿½todo de escrita do campo id
 	 * @param Requer um parametro do tipo int
 	 */
 	public void setId(int id) {

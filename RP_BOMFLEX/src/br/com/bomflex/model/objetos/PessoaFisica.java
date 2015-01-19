@@ -4,13 +4,13 @@
 package br.com.bomflex.model.objetos;
 
 /**
- * @author Mailton Araújo - Analista de Sistemas
+ * @author Mailton Araï¿½jo - Analista de Sistemas
  * Telefone - 71 - 3301-9000
  * E-mail - mailton@sonomag.com.br
  * 		    pcmotion@gmail.com
  */
 public class PessoaFisica {
-	//ID Pessoa Física
+	//ID Pessoa Fï¿½sica
 	private int idPessoaFisica;
 	//ID Pessoa
 	private int idPessoa;
@@ -24,6 +24,8 @@ public class PessoaFisica {
 	private String cpf;
 	//RG
 	private String rg;
+	//Data Nascimento
+	private String dataNascimento;
 		
 	/**
 	 * Construtor da Classe PessoaFisica.java 
@@ -41,102 +43,116 @@ public class PessoaFisica {
 		this.cpf = cpf;
 	}
 	/**
-	 * Método para retorno do campo idPessoaFisica
+	 * Mï¿½todo para retorno do campo idPessoaFisica
 	 * @return Retorna um objeto do tipo int
 	 */
 	public int getIdPessoaFisica() {
 		return idPessoaFisica;
 	}
 	/**
-	 * Método de escrita do campo idPessoaFisica
+	 * Mï¿½todo de escrita do campo idPessoaFisica
 	 * @param Requer um parametro do tipo int
 	 */
 	public void setIdPessoaFisica(int idPessoaFisica) {
 		this.idPessoaFisica = idPessoaFisica;
 	}
 	/**
-	 * Método para retorno do campo idPessoa
+	 * Mï¿½todo para retorno do campo idPessoa
 	 * @return Retorna um objeto do tipo int
 	 */
 	public int getIdPessoa() {
 		return idPessoa;
 	}
 	/**
-	 * Método de escrita do campo idPessoa
+	 * Mï¿½todo de escrita do campo idPessoa
 	 * @param Requer um parametro do tipo int
 	 */
 	public void setIdPessoa(int idPessoa) {
 		this.idPessoa = idPessoa;
 	}
 	/**
-	 * Método para retorno do campo nome
+	 * Mï¿½todo para retorno do campo nome
 	 * @return Retorna um objeto do tipo String
 	 */
 	public String getNome() {
 		return nome;
 	}
 	/**
-	 * Método de escrita do campo nome
+	 * Mï¿½todo de escrita do campo nome
 	 * @param Requer um parametro do tipo String
 	 */
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
 	/**
-	 * Método para retorno do campo sobrenome
+	 * Mï¿½todo para retorno do campo sobrenome
 	 * @return Retorna um objeto do tipo String
 	 */
 	public String getSobrenome() {
 		return sobrenome;
 	}
 	/**
-	 * Método de escrita do campo sobrenome
+	 * Mï¿½todo de escrita do campo sobrenome
 	 * @param Requer um parametro do tipo String
 	 */
 	public void setSobrenome(String sobrenome) {
 		this.sobrenome = sobrenome;
 	}
 	/**
-	 * Método para retorno do campo apelido
+	 * Mï¿½todo para retorno do campo apelido
 	 * @return Retorna um objeto do tipo String
 	 */
 	public String getApelido() {
 		return apelido;
 	}
 	/**
-	 * Método de escrita do campo apelido
+	 * Mï¿½todo de escrita do campo apelido
 	 * @param Requer um parametro do tipo String
 	 */
 	public void setApelido(String apelido) {
 		this.apelido = apelido;
 	}
 	/**
-	 * Método para retorno do campo cpf
+	 * Mï¿½todo para retorno do campo cpf
 	 * @return Retorna um objeto do tipo String
 	 */
 	public String getCpf() {
 		return cpf;
 	}
 	/**
-	 * Método de escrita do campo cpf
+	 * Mï¿½todo de escrita do campo cpf
 	 * @param Requer um parametro do tipo String
 	 */
 	public void setCpf(String cpf) {
 		this.cpf = cpf;
 	}
 	/**
-	 * Método para retorno do campo rg
+	 * Mï¿½todo para retorno do campo rg
 	 * @return Retorna um objeto do tipo String
 	 */
 	public String getRg() {
 		return rg;
 	}
 	/**
-	 * Método de escrita do campo rg
+	 * Mï¿½todo de escrita do campo rg
 	 * @param Requer um parametro do tipo String
 	 */
 	public void setRg(String rg) {
 		this.rg = rg;
+	}
+	/**
+	 * MÃ©todo para retorno do campo dataNascimento
+	 * @return Retorna um objeto do tipo String
+	 */
+	public String getDataNascimento() {
+		return dataNascimento;
+	}
+	/**
+	 * MÃ©todo de escrita do campo dataNascimento
+	 * @param Requer um parametro do tipo String
+	 */
+	public void setDataNascimento(String dataNascimento) {
+		this.dataNascimento = dataNascimento;
 	}
 	
 }

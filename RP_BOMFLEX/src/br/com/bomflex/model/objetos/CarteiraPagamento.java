@@ -4,7 +4,7 @@
 package br.com.bomflex.model.objetos;
 
 /**
- * @author Mailton Araújo - Analista de Sistemas
+ * @author Mailton Araï¿½jo - Analista de Sistemas
  * Telefone - 71 - 3301-9000
  * E-mail - mailton@sonomag.com.br
  * 		    pcmotion@gmail.com
@@ -12,57 +12,87 @@ package br.com.bomflex.model.objetos;
 public class CarteiraPagamento {
 	//Id Carteira de Pagamento
 	private int idCarteiraPagamento;
+	//Id do Tipo de Carteira de Pagamento Exemplo: A receber, A pagar, EmprÃ©stimo, etc.
+	private int idTipoCarteiraPagamento;
 	//Nome da Carteira de Pagamento
 	private String nomeCarteiraPagamento;
-	//Descrição da Carteira de Pagamento;
+	//Descriï¿½ï¿½o da Carteira de Pagamento;
 	private String descricaoCarteiraPagamento;
+	
 	/**
 	 * Construtor da Classe CarteiraPagamento.java 
 	 * @param idCarteiraPagamento
+	 * @param idTipoCarteiraPagamento
 	 * @param nomeCarteiraPagamento
+	 * @param descricaoCarteiraPagamento
 	 */
 	public CarteiraPagamento(int idCarteiraPagamento,
-			String nomeCarteiraPagamento) {
+			int idTipoCarteiraPagamento, String nomeCarteiraPagamento,
+			String descricaoCarteiraPagamento) {
 		this.idCarteiraPagamento = idCarteiraPagamento;
+		this.idTipoCarteiraPagamento = idTipoCarteiraPagamento;
 		this.nomeCarteiraPagamento = nomeCarteiraPagamento;
+		this.descricaoCarteiraPagamento = descricaoCarteiraPagamento;
 	}
+
 	/**
-	 * Método para retorno do campo idCarteiraPagamento
+	 * MÃ©todo para retorno do campo idCarteiraPagamento
 	 * @return Retorna um objeto do tipo int
 	 */
 	public int getIdCarteiraPagamento() {
 		return idCarteiraPagamento;
 	}
+
 	/**
-	 * Método de escrita do campo idCarteiraPagamento
+	 * MÃ©todo de escrita do campo idCarteiraPagamento
 	 * @param Requer um parametro do tipo int
 	 */
 	public void setIdCarteiraPagamento(int idCarteiraPagamento) {
 		this.idCarteiraPagamento = idCarteiraPagamento;
 	}
+
 	/**
-	 * Método para retorno do campo nomeCarteiraPagamento
+	 * MÃ©todo para retorno do campo idTipoCarteiraPagamento
+	 * @return Retorna um objeto do tipo int
+	 */
+	public int getIdTipoCarteiraPagamento() {
+		return idTipoCarteiraPagamento;
+	}
+
+	/**
+	 * MÃ©todo de escrita do campo idTipoCarteiraPagamento
+	 * @param Requer um parametro do tipo int
+	 */
+	public void setIdTipoCarteiraPagamento(int idTipoCarteiraPagamento) {
+		this.idTipoCarteiraPagamento = idTipoCarteiraPagamento;
+	}
+
+	/**
+	 * MÃ©todo para retorno do campo nomeCarteiraPagamento
 	 * @return Retorna um objeto do tipo String
 	 */
 	public String getNomeCarteiraPagamento() {
 		return nomeCarteiraPagamento;
 	}
+
 	/**
-	 * Método de escrita do campo nomeCarteiraPagamento
+	 * MÃ©todo de escrita do campo nomeCarteiraPagamento
 	 * @param Requer um parametro do tipo String
 	 */
 	public void setNomeCarteiraPagamento(String nomeCarteiraPagamento) {
 		this.nomeCarteiraPagamento = nomeCarteiraPagamento;
 	}
+
 	/**
-	 * Método para retorno do campo descricaoCarteiraPagamento
+	 * MÃ©todo para retorno do campo descricaoCarteiraPagamento
 	 * @return Retorna um objeto do tipo String
 	 */
 	public String getDescricaoCarteiraPagamento() {
 		return descricaoCarteiraPagamento;
 	}
+
 	/**
-	 * Método de escrita do campo descricaoCarteiraPagamento
+	 * MÃ©todo de escrita do campo descricaoCarteiraPagamento
 	 * @param Requer um parametro do tipo String
 	 */
 	public void setDescricaoCarteiraPagamento(String descricaoCarteiraPagamento) {

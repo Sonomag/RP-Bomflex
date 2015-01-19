@@ -28,7 +28,6 @@ public class FuncaoFuncionario {
 	 * @param salarioBase
 	 */
 	public FuncaoFuncionario(int idFuncao, String nome, float salarioBase) {
-		super();
 		this.idFuncao = idFuncao;
 		this.nome = nome;
 		this.salarioBase = salarioBase;

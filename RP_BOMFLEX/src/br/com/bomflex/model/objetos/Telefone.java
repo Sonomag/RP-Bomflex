@@ -4,12 +4,28 @@
 package br.com.bomflex.model.objetos;
 
 /**
- * @author Mailton Araújo - Analista de Sistemas
+ * @author Mailton Araï¿½jo - Analista de Sistemas
  * Telefone - 71 - 3301-9000
  * E-mail - mailton@sonomag.com.br
  * 		    pcmotion@gmail.com
  */
 public class Telefone {
+	//id telefone
+	private int idTelefone;
+	/**
+	 * MÃ©todo para retorno do campo idTelefone
+	 * @return Retorna um objeto do tipo int
+	 */
+	public int getIdTelefone() {
+		return idTelefone;
+	}
+	/**
+	 * MÃ©todo de escrita do campo idTelefone
+	 * @param Requer um parametro do tipo int
+	 */
+	public void setIdTelefone(int idTelefone) {
+		this.idTelefone = idTelefone;
+	}
 	//Id do Tipo de Telefone
 	private int idTipoTelefone;
 	//Id da Pessoa que o Telefone esta relacionado
@@ -28,78 +44,79 @@ public class Telefone {
 	 * @param ddd
 	 * @param telefone
 	 */
-	public Telefone(int idTipoTelefone, int idPessoa, String ddd,
+	public Telefone(int idTelefone, int idTipoTelefone, int idPessoa, String ddd,
 			String telefone) {
+		this.idTelefone = idTelefone;
 		setIdTipoTelefone(idTipoTelefone);
 		setIdPessoa(idPessoa);
 		setDdd(ddd);
 		setTelefone(telefone);
 	}
 	/**
-	 * Método para retorno do campo idTipoTelefone
+	 * Mï¿½todo para retorno do campo idTipoTelefone
 	 * @return Retorna um objeto do tipo int
 	 */
 	public int getIdTipoTelefone() {
 		return idTipoTelefone;
 	}
 	/**
-	 * Método de escrita do campo idTipoTelefone
+	 * Mï¿½todo de escrita do campo idTipoTelefone
 	 * @param Requer um parametro do tipo int
 	 */
 	public void setIdTipoTelefone(int idTipoTelefone) {
 		this.idTipoTelefone = idTipoTelefone;
 	}
 	/**
-	 * Método para retorno do campo idPessoa
+	 * Mï¿½todo para retorno do campo idPessoa
 	 * @return Retorna um objeto do tipo int
 	 */
 	public int getIdPessoa() {
 		return idPessoa;
 	}
 	/**
-	 * Método de escrita do campo idPessoa
+	 * Mï¿½todo de escrita do campo idPessoa
 	 * @param Requer um parametro do tipo int
 	 */
 	public void setIdPessoa(int idPessoa) {
 		this.idPessoa = idPessoa;
 	}
 	/**
-	 * Método para retorno do campo ddd
+	 * Mï¿½todo para retorno do campo ddd
 	 * @return Retorna um objeto do tipo String
 	 */
 	public String getDdd() {
 		return ddd;
 	}
 	/**
-	 * Método de escrita do campo ddd
+	 * Mï¿½todo de escrita do campo ddd
 	 * @param Requer um parametro do tipo String
 	 */
 	public void setDdd(String ddd) {
 		this.ddd = ddd;
 	}
 	/**
-	 * Método para retorno do campo telefone
+	 * Mï¿½todo para retorno do campo telefone
 	 * @return Retorna um objeto do tipo String
 	 */
 	public String getTelefone() {
 		return telefone;
 	}
 	/**
-	 * Método de escrita do campo telefone
+	 * Mï¿½todo de escrita do campo telefone
 	 * @param Requer um parametro do tipo String
 	 */
 	public void setTelefone(String telefone) {
 		this.telefone = telefone;
 	}
 	/**
-	 * Método para retorno do campo contato
+	 * Mï¿½todo para retorno do campo contato
 	 * @return Retorna um objeto do tipo String
 	 */
 	public String getContato() {
 		return contato;
 	}
 	/**
-	 * Método de escrita do campo contato
+	 * Mï¿½todo de escrita do campo contato
 	 * @param Requer um parametro do tipo String
 	 */
 	public void setContato(String contato) {

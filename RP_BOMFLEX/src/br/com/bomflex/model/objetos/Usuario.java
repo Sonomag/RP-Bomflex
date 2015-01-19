@@ -8,14 +8,17 @@ public class Usuario {
 	private int idUsuario;
 	//Nome do Usuario
 	private String nome;
+	//Senha do Usuário
+	private String senha;
 	/***
 	 * Construtor do Objeto Usuario onde é obrigado informar o idUsuario e o nome
 	 * @param idUsuario Requer um numero INTEIRO
 	 * @param nome Requer uma String
 	 */
-	public Usuario(int idUsuario, String nome){
+	public Usuario(int idUsuario, String nome, String senha){
 		setIdUsuario(idUsuario);
 		setNome(nome);
+		setSenha(senha);
 	}
 	/***
 	 * Método para retorno do Id Usuario
@@ -46,5 +49,19 @@ public class Usuario {
 	 */
 	private void setNome(String nome) {
 		this.nome = nome;
+	}
+	/**
+	 * Método para retorno do campo senha
+	 * @return Retorna um objeto do tipo String
+	 */
+	public String getSenha() {
+		return senha;
+	}
+	/**
+	 * Método de escrita do campo senha
+	 * @param Requer um parametro do tipo String
+	 */
+	public void setSenha(String senha) {
+		this.senha = senha;
 	}
 }
