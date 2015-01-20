@@ -10,7 +10,7 @@ import java.sql.SQLException;
 import br.com.bomflex.controller.erro.StringErros;
 
 /**
- * @author Mailton Araújo - Analista de Sistemas
+ * @author Mailton Araï¿½jo - Analista de Sistemas
  * Telefone - 71 - 3301-9000
  * E-mail - mailton@sonomag.com.br
  * 		    pcmotion@gmail.com
@@ -18,18 +18,18 @@ import br.com.bomflex.controller.erro.StringErros;
 public class ConexaoLocal {
 
 	/***
-	 * Declaração das Constantes Principais da Classe
+	 * Declaraï¿½ï¿½o das Constantes Principais da Classe
 	 */
-	private static final String STR_DRIVER= "org.postgresql.Driver";//Driver Responsável para a conexão com o Banco de Dados Postgres
+	private static final String STR_DRIVER= "org.postgresql.Driver";//Driver Responsï¿½vel para a conexï¿½o com o Banco de Dados Postgres
 	private static final String DATABASE = "ERP-BOMFLEX";//Nome do Database
-	private static final String IP_LOCAL = "10.1.1.104";//Caso Deseje Acessar a maquina Local Alterar este dado
-	private static final String USER = "erp-bomflex";//Usuário do Banco de Dados
-	private static final String PASSWORD = "vk32lcvop123";//Senha do Usuário do Banco de Dados
+	private static final String IP_LOCAL = "localhost";//Caso Deseje Acessar a maquina Local Alterar este dado
+	private static final String USER = "erp-bomflex";//Usuï¿½rio do Banco de Dados
+	private static final String PASSWORD = "vk32lcvop123";//Senha do Usuï¿½rio do Banco de Dados
 	private static final String STR_CONEXAO = "jdbc:postgresql://" + IP_LOCAL + ":8751/" + DATABASE ;//Uma String de Conexï¿½es Local
 	
 	
 	/***
-	 * Método para retorno do Ponteiro de Conexao com o Banco de Dados
+	 * Mï¿½todo para retorno do Ponteiro de Conexao com o Banco de Dados
 	 * @return Retorna um objeto do tipo Connection
 	 */
 	public static Connection getConection(StringErros erros) {

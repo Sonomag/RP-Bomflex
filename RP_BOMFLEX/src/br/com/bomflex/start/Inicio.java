@@ -7,6 +7,8 @@ import javax.swing.JOptionPane;
 
 import br.com.bomflex.controller.erro.StringErros;
 import br.com.bomflex.model.ObjetoComun;
+import br.com.bomflex.model.dao.cadastro.FuncionarioDAO;
+import br.com.bomflex.model.objetos.tabelas.ObjBuscaFuncionario;
 import br.com.bomflex.view.autenticacao.Autenticacao;
 import br.com.bomflex.view.utilitario.telas.ProducaoFaixa;
 
@@ -21,7 +23,6 @@ import br.com.bomflex.view.utilitario.telas.ProducaoFaixa;
 public class Inicio {
 
 	public static void main(String[] args) {
-		
 		//String dos Erros do Sistema
 		StringErros erros = new StringErros();	
 		//Enviar o objeto dos erros do Sistema.
@@ -35,6 +36,7 @@ public class Inicio {
 		}else{
 			JOptionPane.showMessageDialog(null, "Código do Erro: "+ "40000" + "\nDescrição do Erro: " + "Não foi carregado a biblioteca de erros. Impossível abrir o programa.","Erro: Faltam Bibliotecas.", 2);
 		}
+		
 		
 		
 		

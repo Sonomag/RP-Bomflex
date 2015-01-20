@@ -111,7 +111,7 @@ public class Validacao {
 		if(cpf.matches("\\d{1,}")||cpf.contains(".")||cpf.contains("-")){
 			return true;
 		}
-		return false;
+		return validaCPF(cpf);
 	}
 	/**
 	 * Metodo para organizar o campo CPF
